@@ -12,6 +12,10 @@
     "winston"
   ],
   "author": "combineli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSFiend/operation-logger.git"
+  },
   "license": "MIT",
   "dependencies": {
     "callsites": "^3.0.0",

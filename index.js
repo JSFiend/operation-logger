@@ -17,15 +17,11 @@ const Logger = function (name, opts = {}) {
 
     const printfFn = function (info) {
         let {timestamp, message, meta} = info;
-        // 时间、地点、人物、事件
-        let log = `${timestamp} `;
         let fileInfo = meta.pop();
         let {fileName, lineNumber, columnNumber, functionName} = fileInfo;
-        log += formatMessage(fileName) + ':';
-        log += formatMessage(lineNumber) + '|';
-        log += formatMessage(columnNumber) + ' ';
-        if (functionName) log += formatMessage(functionName) + ' ';
-        log += formatMessage(message) + ' ';
+        let log = '';
+        // 时间、地点、人物、事件
+        log += `${timestamp} ${fileName}|${lineNumber}|${columnNumber} ${functionName || ''} ${formatMessage(message)} `;
         meta.forEach(item => log += formatMessage(item) + ' ');
         return log
     };
