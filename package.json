@@ -1,6 +1,6 @@
 {
   "name": "operation-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "运营日志，除了打印日志信息，额外打印信息的触发时间，触发文件名，文件行数、列数，触发的上下文函数名。方便精准定位问题。",
   "main": "index.js",
   "scripts": {
