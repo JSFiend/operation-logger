@@ -1,0 +1,22 @@
+{
+  "name": "operation-logger",
+  "version": "1.0.0",
+  "description": "运营日志，除了打印日志信息，额外打印信息的触发时间，触发文件名，文件行数、列数，触发的上下文函数名。方便精准定位问题。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "operation-logger",
+    "logger",
+    "winston"
+  ],
+  "author": "combineli",
+  "license": "MIT",
+  "dependencies": {
+    "callsites": "^3.0.0",
+    "is": "^3.2.1",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.5.1"
+  }
+}

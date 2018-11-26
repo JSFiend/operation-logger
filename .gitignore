@@ -1,0 +1,4 @@
+*-audit.json
+*.log
+node_modules
+.idea
